@@ -10,9 +10,6 @@ import javax.swing.JSpinner;
 import javax.swing.JRadioButton;
 import javax.swing.BoxLayout;
 import javax.swing.JTextArea;
-import javax.swing.JButton;
-import java.awt.Font;
-import javax.swing.JList;
 
 public class main_window extends JFrame {
 
@@ -51,22 +48,11 @@ public class main_window extends JFrame {
 		show_panel.setLayout(null);
 		
 		JTextArea textArea = new JTextArea();
-		textArea.setFont(new Font("Monospaced", Font.PLAIN, 18));
-		textArea.setBounds(0, 27, 549, 396);
+		textArea.setBounds(0, 11, 549, 412);
 		show_panel.add(textArea);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(22, 22, 206, 415);
+		panel.setBounds(22, 11, 194, 423);
 		contentPane.add(panel);
-		
-		JButton btnTest = new JButton("Test");
-		btnTest.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnTest.setBounds(544, 455, 89, 31);
-		contentPane.add(btnTest);
-		
-		JButton btnSubmit = new JButton("Submit");
-		btnSubmit.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		btnSubmit.setBounds(675, 455, 89, 31);
-		contentPane.add(btnSubmit);
 	}
 }

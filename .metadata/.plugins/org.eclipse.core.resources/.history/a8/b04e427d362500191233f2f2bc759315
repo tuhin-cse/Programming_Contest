@@ -12,7 +12,6 @@ import javax.swing.BoxLayout;
 import javax.swing.JTextArea;
 import javax.swing.JButton;
 import java.awt.Font;
-import javax.swing.JList;
 
 public class main_window extends JFrame {
 
@@ -56,7 +55,7 @@ public class main_window extends JFrame {
 		show_panel.add(textArea);
 		
 		JPanel panel = new JPanel();
-		panel.setBounds(22, 22, 206, 415);
+		panel.setBounds(22, 11, 206, 423);
 		contentPane.add(panel);
 		
 		JButton btnTest = new JButton("Test");
