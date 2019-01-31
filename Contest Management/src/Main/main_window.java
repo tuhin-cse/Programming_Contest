@@ -6,6 +6,8 @@ import java.awt.EventQueue;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+import javax.swing.JSpinner;
+import javax.swing.JRadioButton;
 
 public class main_window extends JFrame {
 
@@ -37,6 +39,12 @@ public class main_window extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		contentPane.setLayout(new BorderLayout(0, 0));
 		setContentPane(contentPane);
+		
+		JSpinner spinner = new JSpinner();
+		contentPane.add(spinner, BorderLayout.CENTER);
+		
+		JRadioButton rdbtnNewRadioButton = new JRadioButton("New radio button");
+		contentPane.add(rdbtnNewRadioButton, BorderLayout.WEST);
 	}
 
 }
